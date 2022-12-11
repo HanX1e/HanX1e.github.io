@@ -93,7 +93,7 @@ section{
     position: relative;
     height: 100vh;
     width: 100%;
-    background: url(bg.jpg);
+    background: url(bckgrnd.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -239,7 +239,7 @@ header.sticky{
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
@@ -272,6 +272,10 @@ header.sticky{
     text-align: center;
     padding: 0 40px;
     transition: height 0.5s;
+}
+.layer h1{
+    color: var(--main-color);
+    font-size: 30px;
 }
 .layer h5{
     font-size: 20px;
@@ -498,5 +502,14 @@ header.sticky{
     }
     .navlist.open{
         top: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .portfolio-content{
+        grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    }
+    .row img{
+        height: 250px;
     }
 }
