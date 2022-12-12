@@ -380,6 +380,7 @@ header.sticky{
 .contact-icons i:hover{
     background: var(--text-color);
     color: var(--main-color);
+    transform: scale(1.5);
 }
 .contact-form{
     position: relative;
